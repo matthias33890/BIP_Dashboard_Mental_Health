@@ -13,7 +13,7 @@ def get_openai_api_key():
         pass
 
     # Finally, try to get from environment variables
-    api_key = os.environ('OPENAI_API_KEY')
+    api_key = os.environ.get('OPENAI_API_KEY')
     if api_key:
         return api_key
 
